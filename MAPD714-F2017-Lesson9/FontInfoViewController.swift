@@ -8,8 +8,10 @@ class FontInfoViewController: UITableViewController {
 
     @IBOutlet weak var fontSampleLabel: UILabel!
     
+  //  @IBOutlet weak var fontSizeSlider: UISlider!
     @IBOutlet weak var fontSizeSlider: UISlider!
     
+ //   @IBOutlet weak var fontSizeLabel: UILabel!
     @IBOutlet weak var fontSizeLabel: UILabel!
     
     @IBOutlet weak var favouriteSwitch: UISwitch!

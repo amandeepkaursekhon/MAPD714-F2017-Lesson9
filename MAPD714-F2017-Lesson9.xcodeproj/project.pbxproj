@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		856D71B41FD075FE008CB1B8 /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856D71B31FD075FE008CB1B8 /* FavouritesList.swift */; };
 		8584F7611FCF81E300FB1D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584F7601FCF81E300FB1D10 /* AppDelegate.swift */; };
 		8584F7631FCF81E300FB1D10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584F7621FCF81E300FB1D10 /* ViewController.swift */; };
 		8584F7661FCF81E300FB1D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8584F7641FCF81E300FB1D10 /* Main.storyboard */; };
 		8584F7681FCF81E300FB1D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8584F7671FCF81E300FB1D10 /* Assets.xcassets */; };
 		8584F76B1FCF81E300FB1D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8584F7691FCF81E300FB1D10 /* LaunchScreen.storyboard */; };
-		8584F7751FCF873900FB1D10 /* FaouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584F7741FCF873900FB1D10 /* FaouritesList.swift */; };
 		8584F77B1FCF8E5600FB1D10 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584F77A1FCF8E5600FB1D10 /* RootViewController.swift */; };
 		8584F79F1FCFA37200FB1D10 /* FontListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584F79E1FCFA37200FB1D10 /* FontListViewController.swift */; };
 		8584F7A11FCFACDD00FB1D10 /* FontSizesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584F7A01FCFACDD00FB1D10 /* FontSizesViewController.swift */; };
@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		856D71B31FD075FE008CB1B8 /* FavouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
 		8584F75D1FCF81E300FB1D10 /* MAPD714-F2017-Lesson9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD714-F2017-Lesson9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8584F7601FCF81E300FB1D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8584F7621FCF81E300FB1D10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		8584F7671FCF81E300FB1D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8584F76A1FCF81E300FB1D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8584F76C1FCF81E300FB1D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8584F7741FCF873900FB1D10 /* FaouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaouritesList.swift; sourceTree = "<group>"; };
 		8584F77A1FCF8E5600FB1D10 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		8584F79E1FCFA37200FB1D10 /* FontListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontListViewController.swift; sourceTree = "<group>"; };
 		8584F7A01FCFACDD00FB1D10 /* FontSizesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizesViewController.swift; sourceTree = "<group>"; };
@@ -70,11 +70,11 @@
 				8584F7671FCF81E300FB1D10 /* Assets.xcassets */,
 				8584F7691FCF81E300FB1D10 /* LaunchScreen.storyboard */,
 				8584F76C1FCF81E300FB1D10 /* Info.plist */,
-				8584F7741FCF873900FB1D10 /* FaouritesList.swift */,
 				8584F77A1FCF8E5600FB1D10 /* RootViewController.swift */,
 				8584F79E1FCFA37200FB1D10 /* FontListViewController.swift */,
 				8584F7A01FCFACDD00FB1D10 /* FontSizesViewController.swift */,
 				8584F7A21FCFB1FF00FB1D10 /* FontInfoViewController.swift */,
+				856D71B31FD075FE008CB1B8 /* FavouritesList.swift */,
 			);
 			path = "MAPD714-F2017-Lesson9";
 			sourceTree = "<group>";
@@ -152,8 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8584F7631FCF81E300FB1D10 /* ViewController.swift in Sources */,
-				8584F7751FCF873900FB1D10 /* FaouritesList.swift in Sources */,
 				8584F79F1FCFA37200FB1D10 /* FontListViewController.swift in Sources */,
+				856D71B41FD075FE008CB1B8 /* FavouritesList.swift in Sources */,
 				8584F77B1FCF8E5600FB1D10 /* RootViewController.swift in Sources */,
 				8584F7A11FCFACDD00FB1D10 /* FontSizesViewController.swift in Sources */,
 				8584F7611FCF81E300FB1D10 /* AppDelegate.swift in Sources */,
