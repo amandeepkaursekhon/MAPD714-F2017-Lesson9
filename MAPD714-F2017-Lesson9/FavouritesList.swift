@@ -2,53 +2,43 @@
 import Foundation
 import UIKit
 
-class FavouritesList   {
-    static let sharedFavouritesList = FavouritesList()
-    private(set) var favourites:[String]
+class FavoritesList {
     
-    //constructor
+    static let sharedFavoritesList = FavoritesList()
+    private(set) var favorites:[String]
+    
     init() {
         let defaults = UserDefaults.standard
-        let storedFavourites = defaults.object(forKey: "favourites") as? [String]
-        favourites = storedFavourites != nil ? storedFavourites! : []
-        
+        let storedFavorites = defaults.object(forKey: "favorites") as? [String]
+        favorites = storedFavorites != nil ? storedFavorites! : []
     }
-    //this methid adds a font to the user preference files
     
-    func addFavourite(fontName :String){
-        if !favourites.contains(fontName)
-        {
-            favourites.append(fontName)
-            saveFavourites()
-        }
-    }
-    //this method saves font favourites to the user preference file
-    
-    private func saveFavourites() {
-        let defaults = UserDefaults.standard
-        defaults.set(favourites, forKey: "favourites")
-        defaults.synchronize()
-        
-    }
-    //this method removes a favourite from the user preference file
-    
-    func RemoveFavourite(fontName: String)
-    {
-        if let index = favourites.index(of: fontName)
+    func addFavorites(fontName: String){
+        if !favorites.contains(fontName) {
             
-        {
-            favourites.remove(at: index)
-            saveFavourites()
+            favorites.append(fontName)
+            saveFavorites()
         }
     }
-    func moveItem(fromIndex from: Int, toIndex to:Int) {
-        let item = favourites[from]
-        favourites.remove(at: from)
-        favourites.insert(item, at: to)
-        saveFavourites()
+    
+    private func saveFavorites(){
+        let defaults = UserDefaults.standard
+        defaults.set(favorites, forKey: "favorites")
+        defaults.synchronize()
     }
     
+    func removeFavorites(fontName: String){
+        if let index = favorites.index(of: fontName) {
+            favorites.remove(at: index)
+            saveFavorites()
+        }
+    }
     
+    func moveItem(fromIndex from: Int, toIndex to: Int) {
+        let item = favorites[from]
+        favorites.remove(at: from)
+        favorites.insert(item, at: to)
+        saveFavorites()
+    }
     
 }
-

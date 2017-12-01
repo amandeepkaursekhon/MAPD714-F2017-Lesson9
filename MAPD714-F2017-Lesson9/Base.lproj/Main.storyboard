@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FamilyName" textLabel="nKQ-Fy-JvI" detailTextLabel="h1U-hU-f1d" style="IBUITableViewCellStyleSubtitle" id="V5G-by-DWW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FamilyName" textLabel="nKQ-Fy-JvI" detailTextLabel="h1U-hU-f1d" style="IBUITableViewCellStyleSubtitle" id="V5G-by-DWW">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V5G-by-DWW" id="laq-V5-LLW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nKQ-Fy-JvI">
@@ -45,7 +45,7 @@
                                     <segue destination="Itb-Cu-pfJ" kind="show" identifier="" id="jhS-NM-az9"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="322-5L-iL1" style="IBUITableViewCellStyleDefault" id="4Gz-vX-2vB">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Favorites" textLabel="322-5L-iL1" style="IBUITableViewCellStyleDefault" id="4Gz-vX-2vB">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Gz-vX-2vB" id="fif-5F-c58">
@@ -61,6 +61,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Itb-Cu-pfJ" kind="show" id="h7s-0B-iSy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -108,6 +111,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="4LV-se-2pn" kind="show" customClass="hh" id="gne-lV-EyI"/>
+                                    <segue destination="Y02-A1-NhD" kind="show" trigger="accessoryAction" id="NUR-u1-CAq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -163,7 +167,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCj-ye-LBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1614" y="-48"/>
+            <point key="canvasLocation" x="1801" y="-452"/>
         </scene>
         <!--Font Info View Controller-->
         <scene sceneID="xQo-Lm-a4b">
@@ -174,28 +178,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yMd-XG-kA9">
-                                <rect key="frame" x="105" y="205" width="49" height="31"/>
+                                <rect key="frame" x="288" y="566" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="toggleFavouriteWithSender:" destination="Y02-A1-NhD" eventType="valueChanged" id="bed-EP-oU0"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txN-oc-hWc">
-                                <rect key="frame" x="294" y="616" width="42" height="21"/>
+                                <rect key="frame" x="290" y="618" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Py-vE-v21">
-                                <rect key="frame" x="69" y="318" width="118" height="30"/>
+                                <rect key="frame" x="32" y="618" width="223" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="slideFontSizeWithSlider:" destination="Y02-A1-NhD" eventType="valueChanged" id="5nW-Wu-nMd"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLf-WE-mFw">
-                                <rect key="frame" x="107" y="116" width="42" height="21"/>
+                                <rect key="frame" x="34" y="135" width="298" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -206,15 +210,15 @@
                         <viewLayoutGuide key="safeArea" id="EMa-jh-GSO"/>
                     </view>
                     <connections>
-                        <outlet property="FontSampleLabel" destination="zLf-WE-mFw" id="h5o-uq-I2S"/>
                         <outlet property="favouriteSwitch" destination="yMd-XG-kA9" id="N0h-3A-dIl"/>
+                        <outlet property="fontSampleLabel" destination="zLf-WE-mFw" id="pWQ-zL-Vod"/>
                         <outlet property="fontSizeLabel" destination="txN-oc-hWc" id="3CH-l4-MGC"/>
                         <outlet property="fontSizeSlider" destination="2Py-vE-v21" id="g7o-4c-zYF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdf-2Z-z8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2327" y="-36"/>
+            <point key="canvasLocation" x="1829.5999999999999" y="381.85907046476763"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rs2-HT-Qh7">
@@ -233,4 +237,7 @@
             <point key="canvasLocation" x="-631" y="-80"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jhS-NM-az9"/>
+    </inferredMetricsTieBreakers>
 </document>
